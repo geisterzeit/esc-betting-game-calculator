@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="block max-w-sm p-6 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700 mx-auto my-20">
+
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ergebnisse</h5>
+            <ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
+                {% for name, points in results %}
+                    <li>
+                        <span class="font-semibold text-gray-900 dark:text-white">{{ name }}</span> mit <span
+                                class="font-semibold text-gray-900 dark:text-white">{{ points }}</span> punkten
+                    </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+{% endblock %}

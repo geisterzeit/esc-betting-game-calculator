@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <img class="mx-auto my-8"
+         src="{{ asset('img/Eurovision_Song_Contest_2024_logo.png') }}"
+         alt="Logo">
+    <h1 class="text-2xl font-bold mx-auto text-center dark:text-white">Tippspiel Auswertung</h1>
+    {{ component('InputTable') }}
+{% endblock %}
